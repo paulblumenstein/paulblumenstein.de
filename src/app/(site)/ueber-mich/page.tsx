@@ -3,20 +3,10 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
 
-const ARBEITSWEISE_ITEMS = [
-  "Professionelle Immobilienfotografie",
-  "Virtuelle 360°-Rundgänge",
-  "Exposé-Erstellung",
-  "Hochwertige Objektbeschreibungen",
-  "Digitale Vermarktung",
-  "Social-Media-Content",
-  "Strukturierte Aufbereitung aller relevanten Objektinformationen",
-];
-
 export const metadata: Metadata = {
   title: "Über mich",
   description:
-    "Professionelle digitale Aufbereitung von Immobilien — Fotografie, Exposés, Objektbeschreibungen und visuelle Vermarktung.",
+    "Wie ich Immobilien für die Vermarktung vorbereite — Fotografie, Exposés und Objektbeschreibungen mit Fokus auf schnelles Verständnis für Interessenten.",
   alternates: { canonical: "/ueber-mich" },
 };
 
@@ -36,108 +26,78 @@ export default function UeberMichPage() {
               Präsentation diesem Anspruch gerecht werden.
             </p>
             <p>
-              Mein Schwerpunkt liegt auf der professionellen digitalen
-              Aufbereitung von Immobilien – von der Fotografie über Exposés
-              und Objektbeschreibungen bis hin zur visuellen Vermarktung.
+              Mein Schwerpunkt liegt auf der digitalen Aufbereitung von
+              Immobilien — von der Fotografie über Exposés und
+              Objektbeschreibungen bis hin zur Vermarktung.
             </p>
             <p>Dabei verfolge ich einen einfachen Grundsatz:</p>
             <p className="font-display text-2xl italic leading-snug text-ink lg:text-3xl">
-              Jede Immobilie soll so präsentiert werden, dass Interessenten
-              bereits online einen realistischen, hochwertigen und
-              vollständigen Eindruck erhalten.
+              Jedes Bild soll eine Frage beantworten — und die Reihenfolge
+              der Bilder den Besucher durch die Immobilie führen.
             </p>
           </div>
 
           <div className="mt-20 flex flex-col lg:mt-28">
             <div className="grid grid-cols-1 gap-4 border-t border-line py-10 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12">
               <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
-                Qualität
+                Ausgangspunkt
               </div>
               <div className="flex max-w-2xl flex-col gap-5 font-serif text-ink-muted">
-                <p className="font-display text-xl italic text-ink lg:text-2xl">
-                  Qualität beginnt vor der Kamera.
-                </p>
                 <p>
-                  Professionelle Immobilienvermarktung besteht nicht nur aus
-                  guten Bildern. Sie beginnt mit einer strukturierten
-                  Vorbereitung, einer durchdachten Präsentation und einer
-                  klaren Kommunikation.
-                </p>
-                <p>
-                  Deshalb betrachte ich jede Immobilie als individuelles
-                  Projekt. Ich arbeite mit dem Ziel, Informationen
-                  verständlich aufzubereiten, Besonderheiten sichtbar zu
-                  machen und Eigentümer sowie Hausverwaltungen im
-                  Vermarktungsprozess zu entlasten.
+                  Mich stört nicht die Bildqualität auf dem Immobilienmarkt.
+                  Mich stört, dass viele Vermarktungen keine klare Idee
+                  haben — es werden Fotos gemacht, ein Standardexposé
+                  erstellt, die Immobilie online gestellt. Dabei beginnt die
+                  Entscheidung eines Interessenten lange vor der
+                  Besichtigung.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 gap-4 border-t border-line py-10 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12">
               <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
-                Mein Anspruch
+                Überzeugung
               </div>
               <div className="max-w-2xl">
-                <p className="font-display text-xl italic leading-snug text-ink lg:text-2xl">
-                  Ich glaube nicht an laute Werbung.
-                  <br />
-                  Ich glaube an Qualität. An Präzision. An Zuverlässigkeit.
-                  <br />
-                  Und daran, dass langfristiges Vertrauen wichtiger ist als
-                  kurzfristige Aufmerksamkeit.
-                </p>
-                <p className="mt-5 font-serif text-ink-muted">
-                  Deshalb verzichte ich bewusst auf übertriebene Versprechen
-                  oder künstliche Selbstdarstellung. Lieber zeige ich echte
-                  Projekte, echte Ergebnisse und lasse die Arbeit für sich
-                  sprechen.
+                <p className="font-serif text-ink-muted">
+                  Der Unterschied liegt für mich nicht in der Kamera,
+                  sondern darin, dass ich Immobilien aus Sicht der
+                  Vermarktung betrachte. Ich will keine möglichst schönen
+                  Bilder erstellen, sondern Immobilien so präsentieren, dass
+                  Interessenten schneller verstehen, was das Objekt
+                  ausmacht.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 gap-4 border-t border-line py-10 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12">
               <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
-                Arbeitsweise
+                Für Eigentümer bedeutet das
               </div>
-              <div>
-                <div className="flex max-w-2xl flex-col gap-5 font-serif text-ink-muted">
-                  <p>Jede Immobilie erzählt ihre eigene Geschichte.</p>
-                  <p>
-                    Mein Ziel ist es, diese Geschichte professionell
-                    sichtbar zu machen. Dazu gehören – je nach Projekt –
-                    unter anderem:
-                  </p>
-                </div>
-                <ul className="mt-6 grid max-w-3xl grid-cols-1 gap-x-8 gap-y-2 font-sans text-sm text-ink sm:grid-cols-2">
-                  {ARBEITSWEISE_ITEMS.map((item) => (
-                    <li key={item} className="border-t border-line py-2">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-6 max-w-2xl font-serif text-ink-muted">
-                  Alles aus einer Hand. Mit klaren Prozessen. Und mit dem
-                  Anspruch, Eigentümer und Hausverwaltungen bestmöglich zu
-                  unterstützen.
+              <div className="max-w-2xl">
+                <p className="font-serif text-ink-muted">
+                  Sie investieren nicht in Fotos. Sie investieren in eine
+                  Präsentation, die den Wert Ihrer Immobilie sichtbar macht,
+                  mehr passende Interessenten anspricht — und dadurch die
+                  Chancen auf den bestmöglichen Verkaufspreis oder die
+                  bestmögliche Vermietung verbessert.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 gap-4 border-t border-b border-line py-10 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12">
               <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
-                Blick nach vorn
+                Ablauf
               </div>
               <div className="flex max-w-2xl flex-col gap-5 font-serif text-ink-muted">
                 <p>
-                  Ich baue mein Unternehmen Schritt für Schritt auf. Nicht
-                  mit großen Versprechen, sondern mit jedem erfolgreich
-                  umgesetzten Projekt.
+                  Ein Auftrag läuft typischerweise so ab: erstes Gespräch,
+                  Klärung des Objekts, Terminvereinbarung, Aufnahme vor Ort,
+                  Auswahl und Bearbeitung der Medien, Erstellung der
+                  vereinbarten Vermarktungsunterlagen, Übergabe an Sie. Je
+                  nach Auftrag können weitere Leistungen hinzukommen.
                 </p>
-                <p>
-                  Mein Ziel ist eine Marke, die für Qualität,
-                  Verlässlichkeit und moderne Immobilienvermarktung steht –
-                  heute ebenso wie in Zukunft.
-                </p>
+                <p>Ich fotografiere mit einer Sony A7C.</p>
               </div>
             </div>
           </div>
