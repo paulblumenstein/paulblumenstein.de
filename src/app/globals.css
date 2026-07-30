@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  /* Ink & Ivory — light register (default, used almost everywhere) */
+  --paper: #faf8f4;
+  --paper-elevated: #ffffff;
+  --paper-sunken: #f1ede4;
+  --ink: #14120f;
+  --ink-muted: #6b655c;
+  --ink-faint: #948c7d;
+  --line: #e7e1d6;
+  --line-strong: #d7cfc0;
+  --accent: #16224e;
+  --on-accent: #ffffff;
+
+  /* dark register — explicit, opt-in for hero / CTA-band sections, not a theme toggle */
+  --abyss: #0d0c0a;
+  --abyss-ink: #f2eee6;
+  --abyss-muted: #a39c8e;
+  --abyss-accent: #8b9cdb;
+
+  --radius-control: 4px;
+  --radius-panel: 8px;
+
+  --shadow-card: 0 1px 2px rgba(20, 18, 15, 0.07), 0 1px 1px rgba(20, 18, 15, 0.05);
+  --shadow-overlay: 0 16px 40px rgba(20, 18, 15, 0.16);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-elevated: var(--paper-elevated);
+  --color-paper-sunken: var(--paper-sunken);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+
+  --color-abyss: var(--abyss);
+  --color-abyss-ink: var(--abyss-ink);
+  --color-abyss-muted: var(--abyss-muted);
+  --color-abyss-accent: var(--abyss-accent);
+
+  --radius-control: var(--radius-control);
+  --radius-panel: var(--radius-panel);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-overlay: var(--shadow-overlay);
+
+  --font-display: var(--font-display);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+@layer base {
+  /* Baseline focus ring for plain links (nav, footer, cards) that don't define
+     their own — uses currentColor so it stays legible in both the light
+     register and the dark abyss sections without a separate override. */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /* underline-reveal used by Button's "text" variant — see components/ui/Button.tsx */
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 2px;
+    transition: background-size 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}
