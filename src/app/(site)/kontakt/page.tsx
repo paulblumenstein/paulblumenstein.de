@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontakt für Immobilienfotografie, 360°-Rundgänge, Exposés und Social-Media-Content.",
+    "Kontakt für die Vermarktung Ihrer Immobilie in Stade und Umgebung.",
   alternates: { canonical: "/kontakt" },
 };
 
