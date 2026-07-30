@@ -6,8 +6,6 @@ import { Gallery } from "@/components/sections/Gallery";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { Field } from "@/components/ui/Field";
-import { Button } from "@/components/ui/Button";
 import { getReferenzObjekt } from "@/content/referenzobjekte";
 
 const SLUG = "stadtblick-pfullendorf";
@@ -112,22 +110,23 @@ export default function StadtblickPfullendorfPage() {
           <h2 className="mt-2 font-display text-3xl lg:text-4xl">
             Fragen zu diesem Projekt?
           </h2>
-          <div className="mt-8 flex max-w-sm flex-col gap-6">
-            <Field label="Name" name="name" type="text" placeholder="Vor- und Nachname" />
-            <Field label="E-Mail" name="email" type="email" placeholder="name@beispiel.de" />
-            <Field
-              label="Nachricht"
-              name="message"
-              multiline
-              rows={3}
-              placeholder="Ihr Anliegen"
-            />
-            <div>
-              <Button variant="primary" tone="light" type="button">
-                Absenden
-              </Button>
-            </div>
-          </div>
+          <p className="mt-4 max-w-md font-serif text-ink-muted">
+            Schreiben Sie mir per{" "}
+            <a
+              href="mailto:blumenstein.paul@googlemail.com"
+              className="text-ink underline hover:text-accent"
+            >
+              E-Mail
+            </a>{" "}
+            oder rufen Sie an:{" "}
+            <a
+              href="tel:+4915114468352"
+              className="text-ink underline hover:text-accent"
+            >
+              +49 151 14468352
+            </a>
+            .
+          </p>
         </Container>
       </Section>
     </>

@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { Eyebrow } from "@/components/ui/Eyebrow";
-import { Field } from "@/components/ui/Field";
-import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -18,11 +15,11 @@ export default function KontaktPage() {
     <>
       <PageHeader
         eyebrow="Kontakt"
-        title="Kontakt aufnehmen"
-        lede="Fotografie, Rundgang, Exposé oder Social-Media-Content — schreiben Sie mir."
+        title="Schreiben Sie mir."
+        lede="Am schnellsten erreichen Sie mich telefonisch oder per E-Mail."
       />
       <Section>
-        <Container className="flex flex-col gap-16 lg:flex-row lg:gap-24">
+        <Container>
           <div className="flex flex-col gap-6 font-serif">
             <div>
               <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
@@ -58,24 +55,6 @@ export default function KontaktPage() {
               >
                 @paulblumenstein
               </a>
-            </div>
-          </div>
-
-          <div className="flex max-w-sm flex-col gap-6">
-            <Eyebrow>Oder per Formular</Eyebrow>
-            <Field label="Name" name="name" type="text" placeholder="Vor- und Nachname" />
-            <Field label="E-Mail" name="email" type="email" placeholder="name@beispiel.de" />
-            <Field
-              label="Nachricht"
-              name="message"
-              multiline
-              rows={4}
-              placeholder="Ihr Anliegen"
-            />
-            <div>
-              <Button variant="primary" tone="light" type="button">
-                Absenden
-              </Button>
             </div>
           </div>
         </Container>
