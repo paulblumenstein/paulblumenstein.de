@@ -8,7 +8,7 @@ import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Field } from "@/components/ui/Field";
 import { Button } from "@/components/ui/Button";
-import { getReferenzObjekt, STATUS_LABEL } from "@/content/referenzobjekte";
+import { getReferenzObjekt } from "@/content/referenzobjekte";
 
 const SLUG = "stadtblick-pfullendorf";
 
@@ -36,13 +36,16 @@ export default function StadtblickPfullendorfPage() {
       <Section>
         <Container>
           <div className="max-w-2xl">
-            <Eyebrow>Über dieses Projekt</Eyebrow>
+            <Eyebrow>Ausgangssituation</Eyebrow>
             <h2 className="mt-2 font-display text-3xl lg:text-4xl">
-              {STATUS_LABEL[obj.status]}
+              Eine Wohnung, die neu vermietet werden sollte
             </h2>
             <p className="mt-4 font-serif text-ink-muted">{obj.summary}</p>
           </div>
-          <ul className="mt-6 grid max-w-3xl grid-cols-1 gap-x-8 gap-y-2 font-sans text-sm text-ink sm:grid-cols-2">
+          <div className="mt-10 font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
+            Maßnahmen
+          </div>
+          <ul className="mt-3 grid max-w-3xl grid-cols-1 gap-x-8 gap-y-2 font-sans text-sm text-ink sm:grid-cols-2">
             {obj.services.map((service) => (
               <li key={service} className="border-t border-line py-2">
                 {service}

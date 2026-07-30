@@ -39,18 +39,15 @@ export const referenzobjekte: ReferenzObjekt[] = [
     location: "Pfullendorf · Baden-Württemberg",
     heroFacts: "55,84 m² · 2 Zimmer · Balkon",
     summary:
-      "Ein vollständig abgeschlossenes Referenzprojekt — von der ersten Aufnahme bis zur eigenständig durchgeführten Nachvermietung.",
+      "Die Wohnung in Pfullendorf sollte neu vermietet werden — mit vollständiger digitaler Vermarktung von der ersten Aufnahme bis zur Auswahl des neuen Mieters.",
     services: [
-      "Professionelle Immobilienfotografie",
+      "Immobilienfotografie",
       "Virtual Staging",
       "Exposé-Erstellung",
+      "Objektbeschreibung",
       "Erstellung des Immobilieninserats",
-      "Hochwertige Objektbeschreibung",
-      "Digitale Vermarktung",
-      "Eigenständige Organisation und Durchführung des gesamten Nachvermietungsprozesses",
-      "Kommunikation und Koordination im Rahmen der Nachvermietung",
       "Durchführung der Besichtigungen",
-      "Auswahl geeigneter Nachmieter für den Vermieter",
+      "Begleitung der Neuvermietung — Kommunikation, Koordination und Auswahl des neuen Mieters",
     ],
     heroImage: {
       src: `${BASE}/wohnzimmer-balkon.jpg`,
