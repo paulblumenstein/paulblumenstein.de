@@ -21,12 +21,12 @@ export default function HomePage() {
           src: "/images/referenzobjekte/stadtblick-pfullendorf/wohnzimmer-balkon.jpg",
           alt: "Helles Wohnzimmer mit großzügigem Blick auf Balkon und Umgebung",
         }}
-        eyebrow="Immobilienfotografie & Marketing"
+        eyebrow="Immobilienvermarktung"
         title={
           <>
-            Immobilien im
+            Der erste Eindruck
             <br />
-            richtigen Licht.
+            entsteht online.
           </>
         }
         cta={
@@ -53,10 +53,10 @@ export default function HomePage() {
             der Tür steht
           </h2>
           <p className="mt-4 max-w-xl font-serif text-ink-muted">
-            Sie müssen sich nicht um Fotograf, Texter und Portale einzeln
-            kümmern. Ich übernehme den kompletten digitalen
-            Vermarktungsprozess Ihrer Immobilie — aus einer Hand, aufeinander
-            abgestimmt und professionell umgesetzt.
+            Ein Interessent entscheidet online in Sekunden, ob er sich eine
+            Immobilie überhaupt ansehen möchte. Ich bereite Fotos, Exposé und
+            Anzeigen so auf, dass mehr passende Interessenten anfragen — und
+            Sie bessere Voraussetzungen für Verkauf oder Vermietung haben.
           </p>
 
           <div className="mt-12 flex flex-col gap-10">
@@ -88,9 +88,9 @@ export default function HomePage() {
 
       <Section>
         <Container>
-          <Eyebrow>Referenzobjekte</Eyebrow>
+          <Eyebrow>Referenzobjekt</Eyebrow>
           <h2 className="mt-2 max-w-md font-display text-3xl lg:text-4xl">
-            Ausgewählte Projekte
+            So sieht das in der Praxis aus
           </h2>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {referenzobjekte.map((obj) => (
@@ -112,9 +112,10 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <Eyebrow>Meine Haltung</Eyebrow>
             <blockquote className="mt-3 font-serif text-2xl italic leading-snug lg:text-3xl">
-              „Eine Immobilie sollte so gezeigt werden, wie sie tatsächlich
-              ist — sorgfältig fotografiert, klar beschrieben, ohne
-              Übertreibung.“
+              „Ich zeige eine Immobilie nicht, um sie möglichst schön
+              aussehen zu lassen. Ich zeige sie so, dass Interessenten
+              schneller verstehen, was sie ausmacht — und sich schneller
+              entscheiden können.“
             </blockquote>
           </div>
         </Container>
@@ -124,11 +125,10 @@ export default function HomePage() {
         <Container>
           <Eyebrow className="text-[#9aa4c8]">Kontakt</Eyebrow>
           <h2 className="mt-2 max-w-md font-display text-3xl lg:text-4xl">
-            Ein Projekt zu besprechen?
+            Eine Immobilie in Stade oder Umgebung zu vermarkten?
           </h2>
           <p className="mt-3 max-w-md font-serif text-[#c9c4b6]">
-            Fotografie, Rundgang, Exposé oder Social-Media-Content — schreiben
-            Sie mir.
+            Schreiben Sie mir kurz, worum es geht — ich melde mich zurück.
           </p>
           <div className="mt-6">
             <Button variant="primary" tone="dark" href="/kontakt">

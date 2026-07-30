@@ -14,7 +14,7 @@ export const leistungsKategorien: LeistungsKategorie[] = [
     items: [
       {
         name: "Objektaufnahme",
-        desc: "Ein einziger Termin vor Ort genügt — die Grundlage für Fotos, Grundriss und Beschreibung entsteht in einem Schritt, nicht in dreien.",
+        desc: "Ein Termin vor Ort liefert die Grundlage für Fotos, Grundriss und Objektbeschreibung — ohne mehrfache Ortstermine.",
       },
       {
         name: "Lage- und Umfeldrecherche",
@@ -31,7 +31,7 @@ export const leistungsKategorien: LeistungsKategorie[] = [
     items: [
       {
         name: "Immobilienfotografie",
-        desc: "Der erste Eindruck entscheidet online in Sekunden — hochwertige, einheitlich bearbeitete Aufnahmen wirken sofort professioneller als Standardfotos.",
+        desc: "Fotos sind für die meisten Interessenten der erste Kontakt mit der Immobilie — noch vor dem Exposé, noch vor der Anfrage.",
       },
       {
         name: "360°-Rundgänge",
@@ -39,7 +39,7 @@ export const leistungsKategorien: LeistungsKategorie[] = [
       },
       {
         name: "Grundrissaufbereitung",
-        desc: "Ein klarer Grundriss lässt Interessenten die Immobilie auf einen Blick verstehen — ganz ohne Rückfragen oder Missverständnisse.",
+        desc: "Ein Grundriss zeigt die Aufteilung auf einen Blick — viele Rückfragen erübrigen sich dadurch von selbst.",
       },
       {
         name: "Virtual Staging",
@@ -52,7 +52,7 @@ export const leistungsKategorien: LeistungsKategorie[] = [
     items: [
       {
         name: "Exposé-Erstellung",
-        desc: "Ein Exposé ist oft der erste echte Kontakt mit Ihrer Immobilie — es soll überzeugen, nicht nur informieren.",
+        desc: "Ein Exposé ist oft der Moment, in dem aus Interesse eine Anfrage wird — es soll überzeugen, nicht nur informieren.",
       },
       {
         name: "Objektbeschreibung",
@@ -64,11 +64,11 @@ export const leistungsKategorien: LeistungsKategorie[] = [
       },
       {
         name: "Social-Media-Content & Instagram-Reels",
-        desc: "Mehr Sichtbarkeit bedeutet mehr qualifizierte Anfragen — ein gutes Reel erreicht oft ein Vielfaches der klassischen Portale.",
+        desc: "Ein Reel erreicht oft Menschen, die nie aktiv nach einer Immobilie gesucht hätten — zusätzlich zu den klassischen Portalen.",
       },
       {
         name: "Digitale Immobilienvermarktung",
-        desc: "Sie sprechen mit einer Person statt mit mehreren Dienstleistern — das spart Abstimmungsaufwand und sorgt für einen einheitlichen Auftritt von Anfang bis Ende.",
+        desc: "Eine Ansprechperson für Fotografie, Text und Vermarktung — ohne Abstimmung zwischen mehreren Dienstleistern.",
       },
     ],
   },
