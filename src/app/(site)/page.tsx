@@ -19,8 +19,9 @@ export default function HomePage() {
         priority
         image={{
           src: "/images/hero/wohnzimmer-hero.jpg",
-          alt: "Modernes, helles Wohnzimmer mit bodentiefen Fenstern und warmen, neutralen Farbtönen",
+          alt: "Wohnzimmer im gedimmten Abendlicht zweier Stehlampen",
         }}
+        focus="50% 40%"
         eyebrow="Immobilienvermarktung"
         title="Ihre Immobilie im richtigen Licht."
         cta={

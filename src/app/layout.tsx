@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title,
     description: siteConfig.description,
-    images: [{ url: heroImagePath, width: 1259, height: 748 }],
+    images: [{ url: heroImagePath, width: 2400, height: 1800 }],
   },
   twitter: {
     card: "summary_large_image",
