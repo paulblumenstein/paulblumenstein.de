@@ -22,13 +22,7 @@ export default function HomePage() {
           alt: "Helles Wohnzimmer mit großzügigem Blick auf Balkon und Umgebung",
         }}
         eyebrow="Immobilienvermarktung"
-        title={
-          <>
-            Der erste Eindruck
-            <br />
-            entsteht online.
-          </>
-        }
+        title="Ihre Immobilie im richtigen Licht."
         cta={
           <>
             <Button
@@ -52,12 +46,6 @@ export default function HomePage() {
             Damit Ihre Immobilie überzeugt, bevor der erste Interessent vor
             der Tür steht
           </h2>
-          <p className="mt-4 max-w-xl font-serif text-ink-muted">
-            Ein Interessent entscheidet online in Sekunden, ob er sich eine
-            Immobilie überhaupt ansehen möchte. Ich bereite Fotos, Exposé und
-            Anzeigen so auf, dass mehr passende Interessenten anfragen — und
-            Sie bessere Voraussetzungen für Verkauf oder Vermietung haben.
-          </p>
 
           <div className="mt-12 flex flex-col gap-10">
             {leistungsKategorien.map((kategorie) => (
@@ -112,10 +100,9 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <Eyebrow>Meine Haltung</Eyebrow>
             <blockquote className="mt-3 font-serif text-2xl italic leading-snug lg:text-3xl">
-              „Ich zeige eine Immobilie nicht, um sie möglichst schön
-              aussehen zu lassen. Ich zeige sie so, dass Interessenten
-              schneller verstehen, was sie ausmacht — und sich schneller
-              entscheiden können.“
+              „Ich zeige eine Immobilie von ihrer besten Seite — für das
+              beste Ergebnis. Das ist gut für Sie. Und, je nach Auftrag, auch
+              für mich.“
             </blockquote>
           </div>
         </Container>

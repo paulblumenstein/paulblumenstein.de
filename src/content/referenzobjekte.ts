@@ -39,15 +39,15 @@ export const referenzobjekte: ReferenzObjekt[] = [
     location: "Pfullendorf · Baden-Württemberg",
     heroFacts: "55,84 m² · 2 Zimmer · Balkon",
     summary:
-      "Die Wohnung in Pfullendorf sollte neu vermietet werden — mit vollständiger digitaler Vermarktung von der ersten Aufnahme bis zur Auswahl des neuen Mieters.",
+      "Neuvermietung einer Wohnung in Pfullendorf — von der Aufnahme bis zur Mieterauswahl.",
     services: [
       "Immobilienfotografie",
       "Virtual Staging",
       "Exposé-Erstellung",
       "Objektbeschreibung",
-      "Erstellung des Immobilieninserats",
-      "Durchführung der Besichtigungen",
-      "Begleitung der Neuvermietung — Kommunikation, Koordination und Auswahl des neuen Mieters",
+      "Immobilieninserat",
+      "Besichtigungen",
+      "Begleitung der Neuvermietung",
     ],
     heroImage: {
       src: `${BASE}/wohnzimmer-balkon.jpg`,

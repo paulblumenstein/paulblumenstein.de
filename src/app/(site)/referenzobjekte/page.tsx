@@ -15,11 +15,7 @@ export const metadata: Metadata = {
 export default function ReferenzobjektePage() {
   return (
     <>
-      <PageHeader
-        eyebrow="Referenzobjekte"
-        title="Ein abgeschlossenes Projekt"
-        lede="Ausgangssituation und Maßnahmen eines abgeschlossenen Projekts — wie ich tatsächlich arbeite."
-      />
+      <PageHeader eyebrow="Referenzobjekte" title="Ein abgeschlossenes Projekt" />
       <Section>
         <Container>
           <div className="flex flex-col">
