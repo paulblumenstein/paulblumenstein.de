@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -13,13 +14,9 @@ export const metadata: Metadata = {
 export default function KontaktPage() {
   return (
     <>
-      <PageHeader
-        eyebrow="Kontakt"
-        title="Schreiben Sie mir."
-        lede="Am schnellsten erreichen Sie mich telefonisch oder per E-Mail."
-      />
+      <PageHeader eyebrow="Kontakt" title="Schreiben Sie mir." />
       <Section>
-        <Container>
+        <Container className="flex flex-col gap-16 lg:flex-row lg:gap-24">
           <div className="flex flex-col gap-6 font-serif">
             <div>
               <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
@@ -57,6 +54,8 @@ export default function KontaktPage() {
               </a>
             </div>
           </div>
+
+          <ContactForm />
         </Container>
       </Section>
     </>

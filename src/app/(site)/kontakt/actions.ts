@@ -1,0 +1,53 @@
+"use server";
+
+import { Resend } from "resend";
+
+export type ContactState = {
+  status: "idle" | "success" | "error";
+  message?: string;
+};
+
+export async function sendContactMessage(
+  _prevState: ContactState,
+  formData: FormData,
+): Promise<ContactState> {
+  const name = formData.get("name")?.toString().trim() ?? "";
+  const email = formData.get("email")?.toString().trim() ?? "";
+  const message = formData.get("message")?.toString().trim() ?? "";
+
+  if (!name || !email || !message) {
+    return { status: "error", message: "Bitte alle Felder ausfüllen." };
+  }
+
+  if (!process.env.RESEND_API_KEY) {
+    return {
+      status: "error",
+      message: "Senden ist gerade nicht möglich. Bitte per E-Mail oder Telefon melden.",
+    };
+  }
+
+  try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const { error } = await resend.emails.send({
+      from: "Kontaktformular <onboarding@resend.dev>",
+      to: "blumenstein.paul@googlemail.com",
+      replyTo: email,
+      subject: `Neue Anfrage von ${name}`,
+      text: `${message}\n\nVon: ${name} (${email})`,
+    });
+
+    if (error) {
+      return {
+        status: "error",
+        message: "Senden fehlgeschlagen. Bitte per E-Mail oder Telefon melden.",
+      };
+    }
+
+    return { status: "success" };
+  } catch {
+    return {
+      status: "error",
+      message: "Senden fehlgeschlagen. Bitte per E-Mail oder Telefon melden.",
+    };
+  }
+}
