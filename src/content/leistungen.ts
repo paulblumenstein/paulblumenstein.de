@@ -30,12 +30,8 @@ export const leistungsKategorien: LeistungsKategorie[] = [
     name: "Visuelle Präsentation",
     items: [
       {
-        name: "Immobilienfotografie",
-        desc: "Fotos für Exposé, Inserate und Anzeigen.",
-      },
-      {
-        name: "360°-Rundgänge",
-        desc: "Ein virtueller Rundgang zum Online-Besichtigen.",
+        name: "Fotografie & virtuelle Besichtigung",
+        desc: "Fotos und 360°-Rundgang mit Sony A7C und Ogulo. Weniger Vor-Ort-Termine, mehr Zeit für qualifizierte Besichtigungen.",
       },
       {
         name: "Grundrissaufbereitung",

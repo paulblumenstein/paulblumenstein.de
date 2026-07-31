@@ -8,14 +8,14 @@ import { referenzobjekte, STATUS_LABEL } from "@/content/referenzobjekte";
 
 export const metadata: Metadata = {
   title: "Referenzobjekte",
-  description: "Ein abgeschlossenes Referenzprojekt von Paul Blumenstein.",
+  description: "Referenzobjekte von Paul Blumenstein.",
   alternates: { canonical: "/referenzobjekte" },
 };
 
 export default function ReferenzobjektePage() {
   return (
     <>
-      <PageHeader eyebrow="Referenzobjekte" title="Ein abgeschlossenes Projekt" />
+      <PageHeader eyebrow="Referenzobjekte" title="Ausgewählte Projekte" />
       <Section>
         <Container>
           <div className="flex flex-col">
