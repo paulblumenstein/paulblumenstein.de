@@ -45,9 +45,6 @@ export default function DachgeschosswohnungAltesLandPage() {
               Einbauküche, ein Bad.
             </p>
             <p className="mt-4 font-serif text-ink-muted">
-              Aufzug und Außenstellplatz vorhanden. Zustand neuwertig.
-            </p>
-            <p className="mt-4 font-serif text-ink-muted">
               Hollern-Twielenfleth liegt im Alten Land, direkt an der Elbe,
               umgeben von Obstplantagen. Stade ist in wenigen Minuten
               erreichbar, ebenso gute Verbindungen Richtung Hamburg.

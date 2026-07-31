@@ -41,7 +41,7 @@ export default function ReihenhausStadePage() {
             </h2>
             <p className="mt-4 font-serif text-ink-muted">
               Reihenmittelhaus in Stade mit Wintergarten, Kamin, Terrasse und
-              Garten. Zuletzt 2022 modernisiert, Zustand gepflegt.
+              Garten, zuletzt 2022 modernisiert.
             </p>
             <p className="mt-4 font-serif text-ink-muted">
               Der Keller ist zu einem zusätzlichen Wohn- und Freizeitbereich
