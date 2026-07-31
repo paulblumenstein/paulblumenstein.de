@@ -25,12 +25,8 @@ export default function HomePage() {
         title="Ihre Immobilie im richtigen Licht."
         cta={
           <>
-            <Button
-              variant="primary"
-              tone="dark"
-              href="/referenzobjekte/stadtblick-pfullendorf"
-            >
-              Referenzobjekt ansehen
+            <Button variant="primary" tone="dark" href="/referenzobjekte">
+              Referenzobjekte ansehen
             </Button>
             <Button variant="text" tone="dark" href="#leistungen">
               Leistungen
@@ -76,7 +72,7 @@ export default function HomePage() {
 
       <Section>
         <Container>
-          <Eyebrow>Referenzobjekt</Eyebrow>
+          <Eyebrow>Referenzobjekte</Eyebrow>
           <h2 className="mt-2 max-w-md font-display text-3xl lg:text-4xl">
             So sieht das in der Praxis aus
           </h2>
