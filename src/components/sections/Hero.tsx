@@ -8,6 +8,8 @@ type HeroProps = {
   facts?: string;
   cta?: ReactNode;
   priority?: boolean;
+  /** CSS object-position for the image, e.g. "50% 35%" — tune per photo so object-cover crops the strongest part. */
+  focus?: string;
 };
 
 /**
@@ -15,7 +17,7 @@ type HeroProps = {
  * gradient), asymmetric headline overlapping the lower-left edge — see
  * Art-Direction-Konzept §6.
  */
-export function Hero({ image, eyebrow, title, facts, cta, priority }: HeroProps) {
+export function Hero({ image, eyebrow, title, facts, cta, priority, focus }: HeroProps) {
   return (
     <div className="relative h-[78vh] min-h-[24rem] overflow-hidden lg:h-[88vh]">
       <Image
@@ -24,6 +26,7 @@ export function Hero({ image, eyebrow, title, facts, cta, priority }: HeroProps)
         fill
         priority={priority}
         sizes="100vw"
+        style={focus ? { objectPosition: focus } : undefined}
         className="object-cover [filter:saturate(.86)_contrast(1.06)_brightness(.97)_sepia(.04)_hue-rotate(-6deg)]"
       />
       <div className="absolute inset-0 bg-[linear-gradient(190deg,transparent_38%,rgba(20,18,15,0.78)_94%)]" />

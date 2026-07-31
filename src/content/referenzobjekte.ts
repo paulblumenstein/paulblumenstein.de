@@ -50,8 +50,8 @@ export const referenzobjekte: ReferenzObjekt[] = [
       "Begleitung der Neuvermietung",
     ],
     heroImage: {
-      src: `${BASE}/wohnzimmer-balkon.jpg`,
-      alt: "Helles Wohnzimmer mit großzügigem Blick auf Balkon und Umgebung, Stadtblick Pfullendorf",
+      src: `${BASE}/balkon-terrasse.jpg`,
+      alt: "Überdachte Terrasse mit Blick über Pfullendorf, Stadtblick Pfullendorf",
     },
     // Reihenfolge erzählt bewusst die Wohnung: Wohnzimmer → Bad → Küche → Essbereich → weitere Räume.
     gallery: [
@@ -63,10 +63,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
       { src: `${BASE}/kueche-detail.jpg`, alt: "Küchenzeile im Detail" },
       { src: `${BASE}/kueche-esstisch.jpg`, alt: "Essbereich und Wohnbereich" },
       { src: `${BASE}/schlafzimmer.jpg`, alt: "Schlafzimmer" },
-      {
-        src: `${BASE}/balkon-terrasse.jpg`,
-        alt: "Überdachte Terrasse mit Blick über Pfullendorf",
-      },
     ],
     grundriss: { src: `${BASE}/grundriss.jpg`, alt: "Grundriss Wohnung 4" },
     grundrissFacts: [

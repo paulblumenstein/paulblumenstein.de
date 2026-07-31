@@ -26,6 +26,7 @@ export default function StadtblickPfullendorfPage() {
       <Hero
         priority
         image={obj.heroImage}
+        focus="50% 38%"
         eyebrow={`Referenzobjekt · ${obj.location ?? ""}`}
         title={obj.name}
         facts={obj.heroFacts}
