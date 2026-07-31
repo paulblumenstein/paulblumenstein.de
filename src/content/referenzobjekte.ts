@@ -96,7 +96,7 @@ export const referenzobjekte: ReferenzObjekt[] = [
       src: `${STADE_BASE}/wintergarten.jpg`,
       alt: "Wintergarten mit Essbereich und Blick in den Garten, Reihenmittelhaus Stade",
     },
-    // Reihenfolge erzählt den Rundgang: Ankommen → Wohnbereiche im Keller → Küche → Bad → Zimmer im Dachgeschoss → Garten → Dachterrasse als Abschluss.
+    // Reihenfolge erzählt den Rundgang: Ankommen → Wohnbereiche im Keller → Küche → Garten → Dachterrasse als Abschluss.
     gallery: [
       {
         src: `${STADE_BASE}/eingang.jpg`,
@@ -111,11 +111,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
         alt: "Loungebereich im Keller mit Natursteinwand",
       },
       { src: `${STADE_BASE}/kueche.jpg`, alt: "Küche" },
-      { src: `${STADE_BASE}/bad.jpg`, alt: "Bad mit Eckbadewanne und Dusche" },
-      {
-        src: `${STADE_BASE}/zimmer-dachgeschoss.jpg`,
-        alt: "Zimmer im Dachgeschoss mit Dachfenstern",
-      },
       {
         src: `${STADE_BASE}/terrasse-garten.jpg`,
         alt: "Terrasse und Garten",
