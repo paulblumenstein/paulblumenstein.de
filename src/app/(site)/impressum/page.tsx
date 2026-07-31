@@ -81,7 +81,7 @@ export default function ImpressumPage() {
                 Verbraucherstreitbeilegung
               </h2>
               <p className="mt-3">
-                Wir sind nicht verpflichtet und nicht bereit, an einem
+                Ich bin nicht verpflichtet und nicht bereit, an einem
                 Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
                 teilzunehmen.
               </p>

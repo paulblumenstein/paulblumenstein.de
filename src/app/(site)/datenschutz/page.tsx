@@ -71,10 +71,26 @@ export default function DatenschutzPage() {
 
             <Block title="Kontaktformular">
               <p>
-                Das Kontaktformular auf dieser Website dient aktuell der
-                Darstellung und verarbeitet keine Daten. Sobald eine
-                Versandfunktion aktiviert wird, wird diese
-                Datenschutzerklärung entsprechend ergänzt.
+                Wenn Sie das Kontaktformular nutzen, werden die von Ihnen
+                eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) zum
+                Zweck der Bearbeitung Ihrer Anfrage verarbeitet.
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die
+                Anfrage der Anbahnung eines Vertrags dient, andernfalls Art. 6
+                Abs. 1 lit. f DSGVO (berechtigtes Interesse an der
+                Beantwortung Ihrer Anfrage).
+              </p>
+              <p>
+                Für den technischen Versand nutze ich den Dienst Resend
+                (Plus Five Five, Inc., 2261 Market Street #5039, San
+                Francisco, CA 94114, USA) als Auftragsverarbeiter. Die
+                Übermittlung in die USA ist über EU-Standardvertragsklauseln
+                sowie die Zertifizierung von Resend nach dem EU-US Data
+                Privacy Framework abgesichert.
+              </p>
+              <p>
+                Ihre Angaben werden gelöscht, sobald Ihre Anfrage
+                abschließend bearbeitet ist, sofern keine gesetzlichen
+                Aufbewahrungspflichten entgegenstehen.
               </p>
             </Block>
 
