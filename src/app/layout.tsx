@@ -36,8 +36,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 const title = `${siteConfig.name} — Immobilienmarketing`;
-const heroImagePath =
-  "/images/referenzobjekte/stadtblick-pfullendorf/wohnzimmer-balkon.jpg";
+const heroImagePath = "/images/hero/wohnzimmer-hero.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

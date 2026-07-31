@@ -53,8 +53,12 @@ export const referenzobjekte: ReferenzObjekt[] = [
       src: `${BASE}/wohnzimmer-balkon.jpg`,
       alt: "Helles Wohnzimmer mit großzügigem Blick auf Balkon und Umgebung, Stadtblick Pfullendorf",
     },
-    // Reihenfolge erzählt bewusst die Wohnung: Bad → Küche → Essbereich → weitere Räume.
+    // Reihenfolge erzählt bewusst die Wohnung: Wohnzimmer → Bad → Küche → Essbereich → weitere Räume.
     gallery: [
+      {
+        src: `${BASE}/wohnzimmer-balkon.jpg`,
+        alt: "Helles Wohnzimmer mit großzügigem Blick auf Balkon und Umgebung, Stadtblick Pfullendorf",
+      },
       { src: `${BASE}/bad.jpg`, alt: "Bad mit Dusche" },
       { src: `${BASE}/kueche-detail.jpg`, alt: "Küchenzeile im Detail" },
       { src: `${BASE}/kueche-esstisch.jpg`, alt: "Essbereich und Wohnbereich" },

@@ -18,8 +18,8 @@ export default function HomePage() {
       <Hero
         priority
         image={{
-          src: "/images/referenzobjekte/stadtblick-pfullendorf/wohnzimmer-balkon.jpg",
-          alt: "Helles Wohnzimmer mit großzügigem Blick auf Balkon und Umgebung",
+          src: "/images/hero/wohnzimmer-hero.jpg",
+          alt: "Modernes, helles Wohnzimmer mit bodentiefen Fenstern und warmen, neutralen Farbtönen",
         }}
         eyebrow="Immobilienvermarktung"
         title="Ihre Immobilie im richtigen Licht."
