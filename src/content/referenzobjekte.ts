@@ -157,15 +157,11 @@ export const referenzobjekte: ReferenzObjekt[] = [
       src: `${HOLLERN_BASE}/dachterrasse.jpg`,
       alt: "Dachterrasse mit Blick über Hollern-Twielenfleth, Dachgeschosswohnung Altes Land",
     },
-    // Reihenfolge erzählt den Rundgang: Wohnzimmer aus zwei Perspektiven → Küche → Flur → Bad → Außenansicht → Treppenhaus.
+    // Reihenfolge erzählt den Rundgang: Wohnzimmer → Küche → Flur → Bad → Außenansicht → Treppenhaus.
     gallery: [
       {
         src: `${HOLLERN_BASE}/wohnzimmer.jpg`,
         alt: "Wohn- und Essbereich mit großen Fensterflächen, Dachgeschosswohnung Altes Land",
-      },
-      {
-        src: `${HOLLERN_BASE}/wohnzimmer-perspektive-zwei.jpg`,
-        alt: "Wohnbereich, zweite Perspektive",
       },
       { src: `${HOLLERN_BASE}/kueche.jpg`, alt: "Einbauküche" },
       {
