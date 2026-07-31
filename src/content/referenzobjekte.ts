@@ -31,6 +31,7 @@ export const STATUS_LABEL: Record<ReferenzObjekt["status"], string> = {
 
 const BASE = "/images/referenzobjekte/stadtblick-pfullendorf";
 const STADE_BASE = "/images/referenzobjekte/reihenhaus-stade";
+const HOLLERN_BASE = "/images/referenzobjekte/dachgeschosswohnung-altes-land";
 
 export const referenzobjekte: ReferenzObjekt[] = [
   {
@@ -136,6 +137,68 @@ export const referenzobjekte: ReferenzObjekt[] = [
       { label: "Letzte Modernisierung", value: "2022" },
       { label: "Heizung", value: "Buderus Gas-Brennwert" },
     ],
+  },
+  {
+    slug: "dachgeschosswohnung-altes-land",
+    name: "Dachgeschosswohnung Altes Land",
+    status: "abgeschlossen",
+    location: "Hollern-Twielenfleth · Niedersachsen",
+    heroFacts: "87,14 m² · 3 Zimmer · Dachterrasse",
+    summary:
+      "Neuvermietung einer Dachgeschosswohnung im Alten Land — von der Aufnahme bis zum Inserat.",
+    services: [
+      "Immobilienfotografie",
+      "360°-Rundgang (Ogulo)",
+      "Exposé-Erstellung",
+      "Objektbeschreibung",
+      "Immobilieninserat",
+    ],
+    heroImage: {
+      src: `${HOLLERN_BASE}/dachterrasse.jpg`,
+      alt: "Dachterrasse mit Blick über Hollern-Twielenfleth, Dachgeschosswohnung Altes Land",
+    },
+    // Reihenfolge erzählt den Rundgang: Wohnzimmer aus zwei Perspektiven → Küche → Flur → Bad → Außenansicht → Treppenhaus.
+    gallery: [
+      {
+        src: `${HOLLERN_BASE}/wohnzimmer.jpg`,
+        alt: "Wohn- und Essbereich mit großen Fensterflächen, Dachgeschosswohnung Altes Land",
+      },
+      {
+        src: `${HOLLERN_BASE}/wohnzimmer-perspektive-zwei.jpg`,
+        alt: "Wohnbereich, zweite Perspektive",
+      },
+      { src: `${HOLLERN_BASE}/kueche.jpg`, alt: "Einbauküche" },
+      {
+        src: `${HOLLERN_BASE}/flur.jpg`,
+        alt: "Flur mit Garderobe",
+      },
+      { src: `${HOLLERN_BASE}/bad.jpg`, alt: "Bad mit Dusche" },
+      {
+        src: `${HOLLERN_BASE}/aussenansicht.jpg`,
+        alt: "Außenansicht des Mehrfamilienhauses",
+      },
+      {
+        src: `${HOLLERN_BASE}/treppenhaus-aufzug.jpg`,
+        alt: "Treppenhaus mit Aufzug",
+      },
+    ],
+    grundrissFacts: [
+      { label: "Miete", value: "1.018,54 €" },
+      { label: "Wohnfläche", value: "87,14 m²" },
+      { label: "Badezimmer", value: "1" },
+      { label: "Baujahr", value: "2022" },
+      { label: "Etage", value: "2" },
+      { label: "Stellplatz", value: "Außenstellplatz" },
+      { label: "Aufzug", value: "Ja" },
+      { label: "Einbauküche", value: "Ja" },
+      { label: "Dachterrasse", value: "Ja" },
+      { label: "Fahrradraum", value: "Ja" },
+      { label: "Abstellraum", value: "Ja" },
+    ],
+    rundgang360: {
+      href: "https://tour.ogulo.com/PuvO",
+      label: "360°-Rundgang in neuem Tab öffnen",
+    },
   },
 ];
 
