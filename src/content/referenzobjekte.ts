@@ -132,8 +132,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
       { label: "Kaufpreis", value: "349.000 €" },
       { label: "Wohnfläche", value: "126,38 m²" },
       { label: "Grundstück", value: "260 m²" },
-      { label: "Zimmer", value: "5" },
-      { label: "Schlafzimmer", value: "5" },
       { label: "Badezimmer", value: "2" },
       { label: "Letzte Modernisierung", value: "2022" },
       { label: "Heizung", value: "Buderus Gas-Brennwert" },
