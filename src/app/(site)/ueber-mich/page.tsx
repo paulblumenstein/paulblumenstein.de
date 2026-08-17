@@ -17,7 +17,7 @@ const STATIONEN = [
   },
   {
     label: "Einstieg",
-    text: "2019 Beginn der Ausbildung zum Immobilienkaufmann (IHK).",
+    text: "2019 Beginn der Berufsausbildung zum Immobilienkaufmann (IHK).",
   },
   {
     label: "Finanzberatung",
@@ -28,8 +28,8 @@ const STATIONEN = [
     text: "Bewusste Rückkehr in die Immobilienbranche, mit klarem Fokus auf eine langfristige Tätigkeit in diesem Bereich.",
   },
   {
-    label: "Qualifikation",
-    text: "Externenprüfung zum Immobilienkaufmann bei der IHK, in mehreren Teilen bereits bestanden.",
+    label: "Prüfung",
+    text: "Aktuell Externenprüfung zum Immobilienkaufmann nach § 45 Abs. 2 BBiG bei der IHK, in mehreren Teilen bereits bestanden.",
   },
   {
     label: "Weg",
