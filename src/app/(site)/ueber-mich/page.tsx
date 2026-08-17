@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
-import { Section } from "@/components/layout/Section";
-import { PageHeader } from "@/components/layout/PageHeader";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export const metadata: Metadata = {
   title: "Über mich",
@@ -10,61 +9,53 @@ export const metadata: Metadata = {
   alternates: { canonical: "/ueber-mich" },
 };
 
-const STATIONEN = [
-  {
-    label: "Wer ich bin",
-    text: "Paul Blumenstein. Immobilienvermarktung in Stade und Umgebung.",
-  },
-  {
-    label: "Einstieg",
-    text: "2019 Beginn der Berufsausbildung zum Immobilienkaufmann (IHK).",
-  },
-  {
-    label: "Finanzberatung",
-    text: "Parallel dazu Erfahrung in der Finanzberatung.",
-  },
-  {
-    label: "Fokus",
-    text: "Rückkehr in die Immobilienbranche, mit dem Ziel einer langfristigen Tätigkeit in diesem Bereich.",
-  },
-  {
-    label: "Prüfung",
-    text: "Aktuell Externenprüfung zum Immobilienkaufmann nach § 45 Abs. 2 BBiG bei der IHK, in mehreren Teilen bereits bestanden.",
-  },
-  {
-    label: "Weg",
-    text: "Beruflich vom Bodensee bis in den Landkreis Stade und die Metropolregion Hamburg.",
-  },
-] as const;
-
 export default function UeberMichPage() {
   return (
     <>
-      <PageHeader
-        eyebrow="Über mich"
-        title="Vom Bodensee in den Landkreis Stade."
-      />
-      <Section>
-        <Container>
-          <div className="flex flex-col">
-            {STATIONEN.map((station, i) => (
-              <div
-                key={station.label}
-                className={`grid grid-cols-1 gap-4 border-t border-line py-10 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12 ${
-                  i === STATIONEN.length - 1 ? "border-b" : ""
-                }`}
-              >
-                <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
-                  {station.label}
-                </div>
-                <p className="max-w-2xl font-serif text-ink-muted">
-                  {station.text}
-                </p>
-              </div>
-            ))}
+      <Container className="pt-20 pb-8 lg:pt-32">
+        <Eyebrow>Über mich</Eyebrow>
+        <h1 className="mt-4 max-w-3xl font-display text-5xl leading-[1.05] lg:text-7xl">
+          Vom Bodensee in den Landkreis Stade.
+        </h1>
+      </Container>
+
+      <Container className="pt-16 pb-24 lg:pt-28 lg:pb-40">
+        <p className="font-display text-2xl lg:text-3xl">Paul Blumenstein</p>
+        <p className="mt-2 max-w-xs font-serif text-ink-muted">
+          Immobilien in Stade und Umgebung.
+        </p>
+
+        <p className="mt-20 max-w-2xl font-serif text-xl leading-snug lg:mt-28 lg:text-2xl">
+          Der Weg in die Immobilienbranche führte über eine Ausbildung zum
+          Immobilienkaufmann (IHK) und eine Station in Finanzberatung und
+          Vertrieb — bevor die Entscheidung fiel, sich langfristig auf
+          Immobilien zu konzentrieren.
+        </p>
+
+        <div className="mt-16 grid max-w-lg grid-cols-1 gap-10 sm:grid-cols-2 lg:mt-20">
+          <div>
+            <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
+              Vorher
+            </div>
+            <div className="mt-2 font-serif text-ink">
+              Finanzberatung &amp; Vertrieb
+            </div>
           </div>
-        </Container>
-      </Section>
+          <div>
+            <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
+              Qualifikation
+            </div>
+            <div className="mt-2 font-serif text-ink">
+              Externenprüfung zum Immobilienkaufmann (IHK)
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-20 font-sans text-xs text-ink-faint lg:mt-28">
+          Beruflich vom Bodensee bis in den Landkreis Stade und die
+          Metropolregion Hamburg.
+        </p>
+      </Container>
     </>
   );
 }
