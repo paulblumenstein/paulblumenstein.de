@@ -17,11 +17,11 @@ const STATIONEN = [
   },
   {
     label: "Einstieg",
-    text: "Beginn der Berufsausbildung zum Immobilienkaufmann (IHK).",
+    text: "2019 Beginn der Berufsausbildung zum Immobilienkaufmann (IHK).",
   },
   {
     label: "Finanzberatung",
-    text: "Parallel dazu Erfahrung in der Finanzberatung — daher ein Verständnis für Immobilienfinanzierung und wirtschaftliche Zusammenhänge.",
+    text: "Parallel dazu Erfahrung in der Finanzberatung.",
   },
   {
     label: "Fokus",
