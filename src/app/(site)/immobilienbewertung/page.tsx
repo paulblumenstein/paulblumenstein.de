@@ -31,14 +31,12 @@ export default function ImmobilienbewertungPage() {
           Was ist Ihre Immobilie wert?
         </h1>
         <p className="mt-5 max-w-xl font-serif text-lg text-ink-muted lg:text-xl">
-          Eine fundierte Immobilienbewertung betrachtet nicht nur
-          Quadratmeterpreise. Entscheidend ist das Zusammenspiel aus Lage,
-          Grundstück, Gebäude, Nutzung, Erträgen und den aktuellen
-          Verhältnissen am Immobilienmarkt.
+          Eine Einschätzung des aktuellen Werts — nach Lage, Zustand und
+          Marktlage.
         </p>
         <div className="mt-8">
           <Button variant="primary" tone="light" href="#anfrage">
-            Immobilie bewerten lassen
+            Bewertung anfragen
           </Button>
         </div>
       </Container>

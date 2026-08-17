@@ -17,7 +17,7 @@ const STATIONEN = [
   },
   {
     label: "Einstieg",
-    text: "2019 Beginn der Berufsausbildung zum Immobilienkaufmann (IHK).",
+    text: "Beginn der Berufsausbildung zum Immobilienkaufmann (IHK).",
   },
   {
     label: "Finanzberatung",
@@ -25,7 +25,7 @@ const STATIONEN = [
   },
   {
     label: "Fokus",
-    text: "Bewusste Rückkehr in die Immobilienbranche, mit klarem Fokus auf eine langfristige Tätigkeit in diesem Bereich.",
+    text: "Rückkehr in die Immobilienbranche, mit dem Ziel einer langfristigen Tätigkeit in diesem Bereich.",
   },
   {
     label: "Prüfung",

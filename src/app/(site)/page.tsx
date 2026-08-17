@@ -40,8 +40,7 @@ export default function HomePage() {
         <Container>
           <Eyebrow>Leistungen</Eyebrow>
           <h2 className="mt-2 max-w-lg font-display text-3xl lg:text-4xl">
-            Damit Ihre Immobilie überzeugt, bevor der erste Interessent vor
-            der Tür steht
+            Vorbereitung. Präsentation. Vermarktung.
           </h2>
 
           <div className="mt-12 flex flex-col gap-10">
@@ -92,14 +91,33 @@ export default function HomePage() {
         </Container>
       </Section>
 
+      <Section className="bg-paper-sunken">
+        <Container>
+          <Eyebrow>Immobilienbewertung</Eyebrow>
+          <h2 className="mt-2 max-w-md font-display text-3xl lg:text-4xl">
+            Was ist Ihre Immobilie heute wert?
+          </h2>
+          <p className="mt-4 max-w-md font-serif text-ink-muted">
+            Wer den aktuellen Wert seines Eigentums kennt, hat eine bessere
+            Grundlage für die nächste Entscheidung. Ich ermittle ihn anhand
+            der individuellen Eigenschaften der Immobilie und der aktuellen
+            Marktverhältnisse.
+          </p>
+          <div className="mt-6">
+            <Button variant="primary" tone="light" href="/immobilienbewertung">
+              Immobilienbewertung
+            </Button>
+          </div>
+        </Container>
+      </Section>
+
       <Section>
         <Container>
           <div className="max-w-2xl">
             <Eyebrow>Meine Haltung</Eyebrow>
             <blockquote className="mt-3 font-serif text-2xl italic leading-snug lg:text-3xl">
-              „Ich zeige eine Immobilie von ihrer besten Seite — für das
-              beste Ergebnis. Das ist gut für Sie. Und, je nach Auftrag, auch
-              für mich.“
+              „Ich zeige eine Immobilie so, wie sie ist. Das ist gut für Sie.
+              Und, je nach Auftrag, auch für mich.“
             </blockquote>
           </div>
         </Container>
