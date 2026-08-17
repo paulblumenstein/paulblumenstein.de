@@ -26,10 +26,10 @@ export default function UeberMichPage() {
         </p>
 
         <p className="mt-20 max-w-2xl font-serif text-xl leading-snug lg:mt-28 lg:text-2xl">
-          Der Weg in die Immobilienbranche führte über eine Ausbildung zum
-          Immobilienkaufmann (IHK) und eine Station in Finanzberatung und
-          Vertrieb — bevor die Entscheidung fiel, sich langfristig auf
-          Immobilien zu konzentrieren.
+          Der Weg in die Immobilienbranche führte über eine
+          Berufsausbildung zum Immobilienkaufmann (IHK) und eine Station in
+          Finanzberatung und Vertrieb — bevor die Entscheidung fiel, sich
+          langfristig auf Immobilien zu konzentrieren.
         </p>
 
         <div className="mt-16 grid max-w-lg grid-cols-1 gap-10 sm:grid-cols-2 lg:mt-20">
