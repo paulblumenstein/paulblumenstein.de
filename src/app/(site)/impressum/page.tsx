@@ -67,21 +67,10 @@ export default function ImpressumPage() {
 
             <div>
               <h2 className="font-sans text-sm font-semibold uppercase tracking-[0.05em] text-ink-faint">
-                Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
-              </h2>
-              <p className="mt-3">
-                Paul Blumenstein
-                <br />
-                Burgsiedlung 13, 21680 Stade
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-sans text-sm font-semibold uppercase tracking-[0.05em] text-ink-faint">
                 Verbraucherstreitbeilegung
               </h2>
               <p className="mt-3">
-                Ich bin nicht verpflichtet und nicht bereit, an einem
+                Ich bin nicht bereit und nicht verpflichtet, an einem
                 Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
                 teilzunehmen.
               </p>

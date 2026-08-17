@@ -45,37 +45,36 @@ export default function DatenschutzPage() {
               </p>
             </Block>
 
-            <Block title="Hosting">
+            <Block title="Hosting und Zugriffsdaten">
               <p>
-                Diese Website wird bei Vercel Inc., 340 S Lemon Ave #4133,
-                Walnut, CA 91789, USA gehostet. Beim Aufruf der Website
-                verarbeitet Vercel technisch notwendige Daten (u. a.
-                IP-Adresse, Datum und Uhrzeit des Zugriffs) in Server-Logfiles,
-                um die Website auszuliefern und deren Stabilität und Sicherheit
-                zu gewährleisten. Da der Anbieter seinen Sitz außerhalb der
-                EU/des EWR hat, wird eine etwaige Datenübermittlung auf
-                Grundlage geeigneter Garantien abgesichert (z. B.
-                EU-Standardvertragsklauseln).
+                Diese Website wird bei Vercel Inc., 440 N Barranca Avenue
+                #4133, Covina, CA 91723, USA gehostet. Beim Aufruf der
+                Website verarbeitet Vercel technisch notwendige Zugriffsdaten
+                (u. a. IP-Adresse, aufgerufene Seite, Datum und Uhrzeit des
+                Zugriffs, Browsertyp) in Server-Logfiles, um die Website
+                auszuliefern und deren Stabilität und Sicherheit zu
+                gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
+                (berechtigtes Interesse an einem sicheren und
+                funktionsfähigen Betrieb der Website).
               </p>
-            </Block>
-
-            <Block title="Cookies und Analyse-Tools">
               <p>
-                Diese Website verwendet aktuell keine Analyse- oder
-                Tracking-Tools und setzt keine Cookies zu Analyse- oder
-                Marketingzwecken. Es werden ausschließlich technisch
-                notwendige Daten verarbeitet, die für den Betrieb der Website
-                erforderlich sind (siehe Abschnitt Hosting).
+                Da Vercel seinen Sitz in den USA hat, erfolgt die
+                Datenübermittlung auf Grundlage von
+                EU-Standardvertragsklauseln; zusätzlich ist Vercel nach dem
+                EU-U.S. Data Privacy Framework zertifiziert.
               </p>
             </Block>
 
             <Block title="Kontaktformular">
               <p>
                 Wenn Sie das Kontaktformular nutzen, werden die von Ihnen
-                eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) zum
-                Zweck der Bearbeitung Ihrer Anfrage verarbeitet.
-                Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die
-                Anfrage der Anbahnung eines Vertrags dient, andernfalls Art. 6
+                eingegebenen Daten verarbeitet: Name, E-Mail-Adresse und
+                Nachricht sowie – bei einer Bewertungsanfrage – die
+                freiwilligen Angaben zur Immobilie (z. B. Anlass, Objektart,
+                Ort, Baujahr, Wohn- und Grundstücksfläche, Nutzung).
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die
+                Anfrage der Anbahnung eines Vertrags dient (etwa eine
+                Bewertungs- oder Vermarktungsanfrage), andernfalls Art. 6
                 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der
                 Beantwortung Ihrer Anfrage).
               </p>
@@ -84,36 +83,60 @@ export default function DatenschutzPage() {
                 (Plus Five Five, Inc., 2261 Market Street #5039, San
                 Francisco, CA 94114, USA) als Auftragsverarbeiter. Die
                 Übermittlung in die USA ist über EU-Standardvertragsklauseln
-                sowie die Zertifizierung von Resend nach dem EU-US Data
+                sowie die Zertifizierung von Resend nach dem EU-U.S. Data
                 Privacy Framework abgesichert.
               </p>
               <p>
-                Ihre Angaben werden gelöscht, sobald Ihre Anfrage
-                abschließend bearbeitet ist, sofern keine gesetzlichen
-                Aufbewahrungspflichten entgegenstehen.
+                Ihre Angaben aus dem Formular werden gelöscht, sobald Ihre
+                Anfrage abschließend bearbeitet ist und sich daraus keine
+                weitere Aufbewahrungspflicht ergibt (z. B. bei einem
+                folgenden Auftrag); andernfalls richtet sich die
+                Speicherdauer nach den gesetzlichen Aufbewahrungsfristen.
+              </p>
+            </Block>
+
+            <Block title="Cookies, Analyse und Tracking">
+              <p>
+                Diese Website setzt keine Cookies zu Analyse-, Marketing-
+                oder Trackingzwecken ein und verwendet keine Dienste wie
+                Google Analytics, Google Tag Manager, Meta Pixel oder
+                vergleichbare Werkzeuge. Verarbeitet werden ausschließlich
+                die technisch notwendigen Zugriffsdaten, die im Abschnitt
+                „Hosting und Zugriffsdaten“ beschrieben sind.
               </p>
             </Block>
 
             <Block title="Ihre Rechte">
               <p>
-                Sie haben jederzeit das Recht auf Auskunft über Ihre
-                gespeicherten personenbezogenen Daten, deren Herkunft und
-                Empfänger sowie den Zweck der Datenverarbeitung sowie ein
-                Recht auf Berichtigung, Löschung, Einschränkung der
-                Verarbeitung, Datenübertragbarkeit und Widerspruch. Sie können
-                sich hierzu sowie zu weiteren Fragen zum Datenschutz jederzeit
-                unter der oben genannten Adresse an mich wenden. Ihnen steht
-                zudem ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde
-                zu.
+                Sie haben das Recht auf Auskunft über die zu Ihrer Person
+                gespeicherten Daten sowie auf Berichtigung, Löschung oder
+                Einschränkung der Verarbeitung dieser Daten. Außerdem steht
+                Ihnen ein Recht auf Datenübertragbarkeit sowie ein
+                Widerspruchsrecht gegen Verarbeitungen zu, die auf Art. 6
+                Abs. 1 lit. f DSGVO gestützt sind. Sie können sich hierzu
+                jederzeit unter der oben genannten Adresse an mich wenden.
+              </p>
+            </Block>
+
+            <Block title="Beschwerderecht">
+              <p>
+                Ihnen steht außerdem ein Beschwerderecht bei einer
+                Datenschutz-Aufsichtsbehörde zu. Für meinen Sitz in
+                Niedersachsen ist dies:
+                <br />
+                Der Landesbeauftragte für den Datenschutz Niedersachsen
+                <br />
+                Prinzenstraße 5, 30159 Hannover
+                <br />
+                lfd.niedersachsen.de
               </p>
             </Block>
 
             <Block title="SSL-/TLS-Verschlüsselung">
               <p>
-                Diese Website nutzt aus Sicherheitsgründen eine SSL-/TLS-
-                Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie
-                daran, dass die Adresszeile des Browsers von „http://“ auf
-                „https://“ wechselt.
+                Diese Website ist aus Sicherheitsgründen durchgehend
+                SSL-/TLS-verschlüsselt, erkennbar an „https://“ in der
+                Adresszeile Ihres Browsers.
               </p>
             </Block>
           </div>
