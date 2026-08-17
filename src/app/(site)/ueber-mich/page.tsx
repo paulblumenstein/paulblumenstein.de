@@ -17,7 +17,7 @@ const STATIONEN = [
   },
   {
     label: "Einstieg",
-    text: "Erste Berührungspunkte mit der Immobilienbranche — daraus hat sich meine heutige berufliche Ausrichtung entwickelt.",
+    text: "2019 Beginn der Ausbildung zum Immobilienkaufmann (IHK).",
   },
   {
     label: "Finanzberatung",
