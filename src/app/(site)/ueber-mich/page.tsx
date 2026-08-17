@@ -17,7 +17,7 @@ const STATIONEN = [
   },
   {
     label: "Einstieg",
-    text: "2019 Einstieg in die Immobilienbranche.",
+    text: "Erste Berührungspunkte mit der Immobilienbranche — daraus hat sich meine heutige berufliche Ausrichtung entwickelt.",
   },
   {
     label: "Finanzberatung",
