@@ -19,6 +19,20 @@ export async function sendContactMessage(
     return { status: "error", message: "Bitte alle Felder ausfüllen." };
   }
 
+  const BEWERTUNGS_FELDER: [string, string][] = [
+    ["Anlass", "anlass"],
+    ["Objektart", "objektart"],
+    ["Ort / PLZ", "ort"],
+    ["Baujahr", "baujahr"],
+    ["Wohnfläche", "wohnflaeche"],
+    ["Grundstücksfläche", "grundstuecksflaeche"],
+    ["Nutzung", "nutzung"],
+  ];
+  const bewertungsDetails = BEWERTUNGS_FELDER.map(([label, field]) => {
+    const value = formData.get(field)?.toString().trim();
+    return value ? `${label}: ${value}` : null;
+  }).filter((line): line is string => line !== null);
+
   if (!process.env.RESEND_API_KEY) {
     return {
       status: "error",
@@ -28,12 +42,17 @@ export async function sendContactMessage(
 
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
+    const details = bewertungsDetails.length
+      ? `\n\n${bewertungsDetails.join("\n")}`
+      : "";
     const { error } = await resend.emails.send({
       from: "Kontaktformular <onboarding@resend.dev>",
       to: "blumenstein.paul@googlemail.com",
       replyTo: email,
-      subject: `Neue Anfrage von ${name}`,
-      text: `${message}\n\nVon: ${name} (${email})`,
+      subject: bewertungsDetails.length
+        ? `Neue Bewertungsanfrage von ${name}`
+        : `Neue Anfrage von ${name}`,
+      text: `${message}${details}\n\nVon: ${name} (${email})`,
     });
 
     if (error) {

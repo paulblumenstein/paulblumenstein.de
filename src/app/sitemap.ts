@@ -5,6 +5,7 @@ import { referenzobjekte } from "@/content/referenzobjekte";
 const STATIC_ROUTES = [
   "",
   "/referenzobjekte",
+  "/immobilienbewertung",
   "/ueber-mich",
   "/kontakt",
   "/impressum",

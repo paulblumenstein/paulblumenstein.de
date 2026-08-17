@@ -7,6 +7,7 @@ import { cn } from "@/lib/cn";
 const NAV_ITEMS = [
   { href: "/", label: "Start" },
   { href: "/referenzobjekte", label: "Referenzobjekte" },
+  { href: "/immobilienbewertung", label: "Immobilienbewertung" },
   { href: "/ueber-mich", label: "Über mich" },
   { href: "/kontakt", label: "Kontakt" },
 ];

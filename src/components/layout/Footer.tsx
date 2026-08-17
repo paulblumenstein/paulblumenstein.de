@@ -4,6 +4,7 @@ import { Container } from "@/components/layout/Container";
 const NAV_ITEMS = [
   { href: "/", label: "Start" },
   { href: "/referenzobjekte", label: "Referenzobjekte" },
+  { href: "/immobilienbewertung", label: "Immobilienbewertung" },
   { href: "/ueber-mich", label: "Über mich" },
   { href: "/kontakt", label: "Kontakt" },
 ];
