@@ -118,7 +118,7 @@ export const praxisfaelle: Praxisfall[] = [
       },
       {
         parameter: "Restnutzungsdauer (manuell gesetzt)",
-        wert: "—",
+        wert: "24 Jahre",
         quelle: "ImmoWertV / Anlage 2 + Objektzustand",
       },
     ],
