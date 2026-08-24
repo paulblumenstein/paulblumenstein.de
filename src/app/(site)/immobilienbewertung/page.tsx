@@ -146,7 +146,7 @@ export default function ImmobilienbewertungPage() {
                       Reihenhaus, Baujahr 1961
                     </h3>
                     <div className="mt-2 font-mono text-sm text-ink-muted">
-                      260 m² · Sachwertverfahren · Stichtag 01.01.2026
+                      126,38 m² · Sachwertverfahren · Stichtag 01.01.2026
                     </div>
                   </div>
                   <div className="lg:text-right">

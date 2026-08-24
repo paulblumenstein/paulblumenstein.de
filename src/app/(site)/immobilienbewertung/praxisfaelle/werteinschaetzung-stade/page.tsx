@@ -64,7 +64,7 @@ export default function WerteinschaetzungStadePage() {
         <p className="mt-5 max-w-xl font-serif text-lg text-ink-muted lg:text-xl">
           {fall.objekt.find((f) => f.label === "Objektart")?.value},
           Baujahr {fall.objekt.find((f) => f.label === "Baujahr")?.value} ·{" "}
-          {fall.objekt.find((f) => f.label === "Wohn-/Nutzfläche")?.value}{" "}
+          {fall.objekt.find((f) => f.label === "Wohnfläche")?.value}{" "}
           Wohnfläche auf{" "}
           {fall.objekt.find((f) => f.label === "Grundstücksfläche")?.value}{" "}
           Grundstück · Bewertungsstichtag {fall.bewertungsstichtag}
@@ -140,9 +140,6 @@ export default function WerteinschaetzungStadePage() {
               ]}
             />
           </div>
-          <p className="mt-4 max-w-md font-sans text-xs text-ink-faint">
-            {fall.sachwert.hinweis}
-          </p>
         </Container>
       </Section>
 
@@ -175,12 +172,9 @@ export default function WerteinschaetzungStadePage() {
             </table>
           </div>
           <div className="mt-6 flex max-w-2xl flex-wrap gap-x-10 gap-y-2 font-sans text-sm text-ink-muted">
-            <span>Leitverfahren: {fall.leitverfahren}</span>
+            <span>Maßgebliches Verfahren: {fall.massgeblichesVerfahren}</span>
             <span>Streuung der Verfahren: {fall.streuung}</span>
           </div>
-          <p className="mt-4 max-w-md font-sans text-xs text-ink-faint">
-            Vergleichswertverfahren: {fall.vergleichswert.status}
-          </p>
         </Container>
       </Section>
 
@@ -191,24 +185,23 @@ export default function WerteinschaetzungStadePage() {
             Verwendete Bewertungsparameter
           </h2>
           <p className="mt-4 max-w-xl font-serif text-ink-muted">
-            Datenstand: 16 von 16 Parametern sind nicht durch eine benannte
-            Quelle belegt.
+            Status: {fall.parameterStatus}.
           </p>
-          <div className="mt-8 max-w-2xl overflow-x-auto">
+          <div className="mt-8 max-w-3xl overflow-x-auto">
             <table className="w-full font-sans text-sm">
               <thead>
                 <tr className="border-b border-line-strong text-left text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
                   <th className="py-2.5 font-normal">Parameter</th>
-                  <th className="py-2.5 text-right font-normal">Wert</th>
+                  <th className="py-2.5 font-normal">Wert</th>
+                  <th className="py-2.5 font-normal">Quelle</th>
                 </tr>
               </thead>
               <tbody>
                 {fall.parameter.map((row) => (
                   <tr key={row.parameter} className="border-b border-line">
                     <td className="py-2.5 text-ink-muted">{row.parameter}</td>
-                    <td className="py-2.5 text-right font-mono">
-                      {row.wert}
-                    </td>
+                    <td className="py-2.5 font-mono">{row.wert}</td>
+                    <td className="py-2.5 text-ink-muted">{row.quelle}</td>
                   </tr>
                 ))}
               </tbody>
