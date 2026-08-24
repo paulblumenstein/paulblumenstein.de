@@ -221,11 +221,13 @@ export default function WerteinschaetzungStadePage() {
             ))}
           </div>
 
-          <div className="mt-10">
-            <Button variant="primary" tone="light" href={fall.pdf.href}>
-              {fall.pdf.label}
-            </Button>
-          </div>
+          {fall.pdf ? (
+            <div className="mt-10">
+              <Button variant="primary" tone="light" href={fall.pdf.href}>
+                {fall.pdf.label}
+              </Button>
+            </div>
+          ) : null}
         </Container>
       </Section>
 

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Gallery } from "@/components/sections/Gallery";
-import { Rundgang360 } from "@/components/sections/Rundgang360";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -93,23 +92,6 @@ export default function DachgeschosswohnungAltesLandPage() {
       <Section className="py-0 lg:py-0">
         <Gallery images={obj.gallery} />
       </Section>
-
-      {obj.rundgang360 ? (
-        <Section>
-          <Container>
-            <Eyebrow>360°-Rundgang</Eyebrow>
-            <h2 className="mt-2 font-display text-3xl lg:text-4xl">
-              Virtuell durch die Wohnung
-            </h2>
-            <div className="mt-8">
-              <Rundgang360
-                href={obj.rundgang360.href}
-                previewImage={obj.gallery[0]}
-              />
-            </div>
-          </Container>
-        </Section>
-      ) : null}
 
       <Section>
         <Container>

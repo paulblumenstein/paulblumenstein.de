@@ -36,7 +36,7 @@ export type Praxisfall = {
   parameter: ParameterZeile[];
   hinweise: string[];
   abschluss: string[];
-  pdf: { href: string; label: string };
+  pdf?: { href: string; label: string };
   referenzobjektSlug?: string;
 };
 
@@ -53,7 +53,6 @@ export const praxisfaelle: Praxisfall[] = [
     ergebnis: { wert: "196.592 €", jeQm: "1.555,56 € je m²" },
     objekt: [
       { label: "Objektart", value: "Reihenhaus" },
-      { label: "Anschrift", value: "Graf-Hartwig-Straße XX, 216xx Stade" },
       { label: "Landkreis", value: "Stade" },
       { label: "Bundesland", value: "Niedersachsen" },
       { label: "Grundstücksfläche", value: "800 m²" },
@@ -138,10 +137,6 @@ export const praxisfaelle: Praxisfall[] = [
       "Es handelt sich um eine überschlägige Wertermittlung, nicht um ein förmliches Verkehrswertgutachten im Sinne des § 194 BauGB und nicht um das Gutachten einer öffentlich bestellten und vereidigten oder nach DIN EN ISO/IEC 17024 zertifizierten sachverständigen Person. Eine Ortsbesichtigung sowie eine Prüfung von Grundbuch, Baulasten, Altlasten oder Bauakte waren nicht Gegenstand dieser Wertermittlung.",
       "Für eine Verwendung, die ein förmliches Verkehrswertgutachten voraussetzt — etwa gegenüber Gerichten, Finanzbehörden oder im Rahmen einer Zwangsversteigerung —, ist die Beauftragung einer entsprechend qualifizierten sachverständigen Person erforderlich.",
     ],
-    pdf: {
-      href: "/documents/werteinschaetzung-stade-sachwertverfahren.pdf",
-      label: "Vollständigen Bericht als PDF öffnen",
-    },
     referenzobjektSlug: "reihenhaus-stade",
   },
 ];

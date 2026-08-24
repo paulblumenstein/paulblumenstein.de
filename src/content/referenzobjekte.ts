@@ -152,7 +152,7 @@ export const referenzobjekte: ReferenzObjekt[] = [
       src: `${HOLLERN_BASE}/dachterrasse.jpg`,
       alt: "Dachterrasse mit Blick über Hollern-Twielenfleth, Dachgeschosswohnung Altes Land",
     },
-    // Reihenfolge erzählt den Rundgang: Wohnzimmer → Küche → Flur → Bad → Außenansicht → Treppenhaus.
+    // Reihenfolge erzählt den Rundgang: Wohnzimmer → Küche → Flur → Bad → Treppenhaus.
     gallery: [
       {
         src: `${HOLLERN_BASE}/wohnzimmer.jpg`,
@@ -164,10 +164,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
         alt: "Flur mit Garderobe",
       },
       { src: `${HOLLERN_BASE}/bad.jpg`, alt: "Bad mit Dusche" },
-      {
-        src: `${HOLLERN_BASE}/aussenansicht.jpg`,
-        alt: "Außenansicht des Mehrfamilienhauses",
-      },
       {
         src: `${HOLLERN_BASE}/treppenhaus-aufzug.jpg`,
         alt: "Treppenhaus mit Aufzug",
@@ -186,10 +182,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
       { label: "Fahrradraum", value: "Ja" },
       { label: "Abstellraum", value: "Ja" },
     ],
-    rundgang360: {
-      href: "https://tour.ogulo.com/PuvO",
-      label: "360°-Rundgang in neuem Tab öffnen",
-    },
   },
 ];
 
