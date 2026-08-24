@@ -141,3 +141,7 @@ export const praxisfaelle: Praxisfall[] = [
 export function getPraxisfall(slug: string) {
   return praxisfaelle.find((p) => p.slug === slug);
 }
+
+export function getPraxisfallForReferenzobjekt(referenzobjektSlug: string) {
+  return praxisfaelle.find((p) => p.referenzobjektSlug === referenzobjektSlug);
+}

@@ -8,6 +8,7 @@ import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { getReferenzObjekt } from "@/content/referenzobjekte";
+import { getPraxisfallForReferenzobjekt } from "@/content/praxisfaelle";
 
 const SLUG = "reihenhaus-stade";
 
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function ReihenhausStadePage() {
   const obj = getReferenzObjekt(SLUG);
   if (!obj) notFound();
+  const praxisfall = getPraxisfallForReferenzobjekt(SLUG);
 
   return (
     <>
@@ -125,13 +127,20 @@ export default function ReihenhausStadePage() {
                 Zu diesem Objekt liegt eine Werteinschätzung vor
               </h2>
             </div>
-            <Button
-              variant="primary"
-              tone="light"
-              href="/immobilienbewertung/praxisfaelle/werteinschaetzung-stade"
-            >
-              Wertermittlung ansehen
-            </Button>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <Button
+                variant="primary"
+                tone="light"
+                href="/immobilienbewertung/praxisfaelle/werteinschaetzung-stade"
+              >
+                Wertermittlung ansehen
+              </Button>
+              {praxisfall?.pdf ? (
+                <Button variant="text" tone="light" href={praxisfall.pdf.href}>
+                  Bericht als PDF öffnen
+                </Button>
+              ) : null}
+            </div>
           </div>
         </Container>
       </Section>
