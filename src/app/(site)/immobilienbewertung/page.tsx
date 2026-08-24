@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -116,6 +117,53 @@ export default function ImmobilienbewertungPage() {
             nach Bewertungsobjekt können ein oder mehrere Verfahren
             herangezogen werden.“
           </blockquote>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Eyebrow>Praxisfälle &amp; Wertermittlungen</Eyebrow>
+          <h2 className="mt-2 max-w-lg font-display text-3xl lg:text-4xl">
+            Ein Verfahren in der Anwendung
+          </h2>
+          <p className="mt-4 max-w-xl font-serif text-ink-muted">
+            Anhand dieses Praxisfalls zeige ich, wie eine Werteinschätzung
+            aufgebaut und hergeleitet wird.
+          </p>
+
+          <Link
+            href="/immobilienbewertung/praxisfaelle/werteinschaetzung-stade"
+            className="group mt-10 block"
+          >
+            <Card className="transition-colors duration-150 group-hover:border-ink">
+              <CardBody className="p-6 lg:p-8">
+                <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+                  <div>
+                    <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
+                      Stade · Niedersachsen
+                    </div>
+                    <h3 className="mt-2 font-display text-2xl lg:text-3xl">
+                      Reihenhaus, Baujahr 1961
+                    </h3>
+                    <div className="mt-2 font-mono text-sm text-ink-muted">
+                      260 m² · Sachwertverfahren · Stichtag 01.01.2026
+                    </div>
+                  </div>
+                  <div className="lg:text-right">
+                    <div className="font-sans text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">
+                      Ermittelter Wert
+                    </div>
+                    <div className="mt-1 font-display text-3xl lg:text-4xl">
+                      196.592 €
+                    </div>
+                  </div>
+                </div>
+                <span className="mt-6 inline-block font-sans text-sm font-semibold uppercase tracking-[0.08em] text-ink group-hover:text-accent">
+                  Wertermittlung ansehen →
+                </span>
+              </CardBody>
+            </Card>
+          </Link>
         </Container>
       </Section>
 

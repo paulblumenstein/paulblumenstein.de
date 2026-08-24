@@ -6,6 +6,7 @@ import { Gallery } from "@/components/sections/Gallery";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Button } from "@/components/ui/Button";
 import { getReferenzObjekt } from "@/content/referenzobjekte";
 
 const SLUG = "reihenhaus-stade";
@@ -114,6 +115,26 @@ export default function ReihenhausStadePage() {
           </Container>
         </Section>
       ) : null}
+
+      <Section className="bg-paper-sunken">
+        <Container>
+          <div className="flex flex-col gap-6 border-t border-line pt-10 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <Eyebrow>Immobilienbewertung</Eyebrow>
+              <h2 className="mt-2 font-display text-2xl lg:text-3xl">
+                Zu diesem Objekt liegt eine Werteinschätzung vor
+              </h2>
+            </div>
+            <Button
+              variant="primary"
+              tone="light"
+              href="/immobilienbewertung/praxisfaelle/werteinschaetzung-stade"
+            >
+              Wertermittlung ansehen
+            </Button>
+          </div>
+        </Container>
+      </Section>
 
       <Section>
         <Container>
