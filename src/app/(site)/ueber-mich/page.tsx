@@ -26,8 +26,8 @@ export default function UeberMichPage() {
         </p>
 
         <p className="mt-20 max-w-2xl font-serif text-xl leading-snug lg:mt-28 lg:text-2xl">
-          Der Weg in die Immobilienbranche führte über eine
-          Berufsausbildung zum Immobilienkaufmann (IHK) und eine Station in
+          Der Weg in die Immobilienbranche begann mit der Ausbildung zum
+          Immobilienkaufmann (IHK), führte über eine Station in
           Finanzberatung und Vertrieb — bevor die Entscheidung fiel, sich
           langfristig auf Immobilien zu konzentrieren.
         </p>
