@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
@@ -41,7 +42,7 @@ export default function DatenschutzPage() {
                 <br />
                 Telefon: +49 151 14468352
                 <br />
-                E-Mail: blumenstein.paul@googlemail.com
+                E-Mail: {siteConfig.email}
               </p>
             </Block>
 

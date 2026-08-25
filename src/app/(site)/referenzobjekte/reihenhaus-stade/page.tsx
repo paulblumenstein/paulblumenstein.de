@@ -9,13 +9,14 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { getReferenzObjekt } from "@/content/referenzobjekte";
 import { getPraxisfallForReferenzobjekt } from "@/content/praxisfaelle";
+import { siteConfig } from "@/config/site";
 
 const SLUG = "reihenhaus-stade";
 
 export const metadata: Metadata = {
   title: "Reihenmittelhaus Stade",
   description:
-    "Referenzprojekt: Immobilienfotografie, 360°-Rundgang, Exposé-Erstellung und Begleitung des Verkaufs für ein Reihenmittelhaus in Stade.",
+    "Referenzprojekt: Immobilienfotografie, 360°-Rundgang, Exposé-Erstellung und Vermarktungsunterlagen für ein Reihenmittelhaus in Stade.",
   alternates: { canonical: "/referenzobjekte/reihenhaus-stade" },
 };
 
@@ -40,7 +41,7 @@ export default function ReihenhausStadePage() {
           <div className="max-w-2xl">
             <Eyebrow>Ausgangssituation</Eyebrow>
             <h2 className="mt-2 font-display text-3xl lg:text-4xl">
-              Ein Reihenhaus, das verkauft werden sollte
+              Ein Reihenhaus, das vermarktet werden sollte
             </h2>
             <p className="mt-4 font-serif text-ink-muted">
               Reihenmittelhaus in Stade mit Wintergarten, Kamin, Terrasse und
@@ -154,7 +155,7 @@ export default function ReihenhausStadePage() {
           <p className="mt-4 max-w-md font-serif text-ink-muted">
             Schreiben Sie mir per{" "}
             <a
-              href="mailto:blumenstein.paul@googlemail.com"
+              href={`mailto:${siteConfig.email}`}
               className="text-ink underline hover:text-accent"
             >
               E-Mail

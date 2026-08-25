@@ -6,6 +6,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { getReferenzObjekt } from "@/content/referenzobjekte";
+import { siteConfig } from "@/config/site";
 
 const SLUG = "dachgeschosswohnung-altes-land";
 
@@ -102,7 +103,7 @@ export default function DachgeschosswohnungAltesLandPage() {
           <p className="mt-4 max-w-md font-serif text-ink-muted">
             Schreiben Sie mir per{" "}
             <a
-              href="mailto:blumenstein.paul@googlemail.com"
+              href={`mailto:${siteConfig.email}`}
               className="text-ink underline hover:text-accent"
             >
               E-Mail

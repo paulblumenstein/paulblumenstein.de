@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Impressum",
@@ -40,7 +41,7 @@ export default function ImpressumPage() {
               <p className="mt-3">
                 Telefon: +49 151 14468352
                 <br />
-                E-Mail: blumenstein.paul@googlemail.com
+                E-Mail: {siteConfig.email}
               </p>
             </div>
 

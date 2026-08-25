@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { siteConfig } from "@/config/site";
 
 export type ContactState = {
   status: "idle" | "success" | "error";
@@ -47,7 +48,7 @@ export async function sendContactMessage(
       : "";
     const { error } = await resend.emails.send({
       from: "Kontaktformular <onboarding@resend.dev>",
-      to: "blumenstein.paul@googlemail.com",
+      to: siteConfig.email,
       replyTo: email,
       subject: bewertungsDetails.length
         ? `Neue Bewertungsanfrage von ${name}`

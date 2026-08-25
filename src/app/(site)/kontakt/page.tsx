@@ -3,6 +3,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -34,10 +35,10 @@ export default function KontaktPage() {
                 E-Mail
               </div>
               <a
-                href="mailto:blumenstein.paul@googlemail.com"
+                href={`mailto:${siteConfig.email}`}
                 className="mt-1 block text-lg hover:text-accent"
               >
-                blumenstein.paul@googlemail.com
+                {siteConfig.email}
               </a>
             </div>
             <div>

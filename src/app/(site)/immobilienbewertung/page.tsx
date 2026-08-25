@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { Card, CardBody } from "@/components/ui/Card";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { cn } from "@/lib/cn";
+import { siteConfig } from "@/config/site";
 import {
   ablaufSchritte,
   benoetigteAngaben,
@@ -357,10 +358,10 @@ export default function ImmobilienbewertungPage() {
                 E-Mail
               </div>
               <a
-                href="mailto:blumenstein.paul@googlemail.com"
+                href={`mailto:${siteConfig.email}`}
                 className="mt-1 block text-lg hover:text-accent"
               >
-                blumenstein.paul@googlemail.com
+                {siteConfig.email}
               </a>
             </div>
           </div>

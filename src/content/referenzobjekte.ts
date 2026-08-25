@@ -41,7 +41,7 @@ export const referenzobjekte: ReferenzObjekt[] = [
     location: "Pfullendorf · Baden-Württemberg",
     heroFacts: "55,84 m² · 2 Zimmer · Balkon",
     summary:
-      "Neuvermietung einer Wohnung in Pfullendorf — von der Aufnahme bis zur Mieterauswahl.",
+      "Wohnung in Pfullendorf — von der Objektaufnahme bis zum fertigen Inserat.",
     services: [
       "Immobilienfotografie",
       "Virtual Staging",
@@ -79,18 +79,18 @@ export const referenzobjekte: ReferenzObjekt[] = [
   {
     slug: "reihenhaus-stade",
     name: "Reihenmittelhaus Stade",
-    status: "aktuell",
+    status: "abgeschlossen",
     location: "Stade · Niedersachsen",
     heroFacts: "126,38 m² · 5 Zimmer · Garten",
     summary:
-      "Verkauf eines Reihenmittelhauses in Stade — von der Aufnahme bis zur Begleitung des Verkaufs.",
+      "Reihenmittelhaus in Stade — von der Objektaufnahme bis zu den fertigen Vermarktungsunterlagen.",
     services: [
       "Immobilienfotografie",
       "360°-Rundgang (Ogulo)",
       "Exposé-Erstellung",
       "Objektbeschreibung",
       "Immobilieninserat",
-      "Begleitung des Verkaufs",
+      "Vermarktungsunterlagen zur Übergabe an den Eigentümer",
     ],
     heroImage: {
       src: `${STADE_BASE}/wintergarten.jpg`,
@@ -125,7 +125,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
       alt: "Grundriss Kellergeschoss, Reihenmittelhaus Stade",
     },
     grundrissFacts: [
-      { label: "Kaufpreis", value: "349.000 €" },
       { label: "Wohnfläche", value: "126,38 m²" },
       { label: "Grundstück", value: "260 m²" },
       { label: "Badezimmer", value: "2" },
@@ -170,7 +169,6 @@ export const referenzobjekte: ReferenzObjekt[] = [
       },
     ],
     grundrissFacts: [
-      { label: "Miete", value: "1.018,54 €" },
       { label: "Wohnfläche", value: "87,14 m²" },
       { label: "Badezimmer", value: "1" },
       { label: "Baujahr", value: "2022" },

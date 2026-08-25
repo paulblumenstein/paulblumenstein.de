@@ -46,7 +46,7 @@ export default function UeberMichPage() {
               Qualifikation
             </div>
             <div className="mt-2 font-serif text-ink">
-              Externenprüfung zum Immobilienkaufmann (IHK)
+              Externenprüfung zum Immobilienkaufmann (IHK) — Abschluss 2026
             </div>
           </div>
         </div>
