@@ -66,6 +66,25 @@ export default function DatenschutzPage() {
               </p>
             </Block>
 
+            <Block title="Domain und DNS">
+              <p>
+                Der Domainname paulblumenstein.de ist bei GoDaddy.com, LLC,
+                2155 E GoDaddy Way, Tempe, AZ 85284, USA registriert; GoDaddy
+                stellt außerdem die DNS-Auflösung (Nameserver) bereit, über
+                die Ihr Browser beim Aufruf der Website an den Hosting-Server
+                weitergeleitet wird. Dabei können bei GoDaddy technisch
+                notwendige Zugriffsdaten (u. a. IP-Adresse, Zeitpunkt der
+                Anfrage) anfallen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f
+                DSGVO (berechtigtes Interesse an einem sicheren und
+                funktionsfähigen Betrieb der Website).
+              </p>
+              <p>
+                Da GoDaddy seinen Sitz in den USA hat, erfolgt die
+                Datenübermittlung auf Grundlage von
+                EU-Standardvertragsklauseln.
+              </p>
+            </Block>
+
             <Block title="Kontaktformular">
               <p>
                 Wenn Sie das Kontaktformular nutzen, werden die von Ihnen
@@ -93,6 +112,25 @@ export default function DatenschutzPage() {
                 weitere Aufbewahrungspflicht ergibt (z. B. bei einem
                 folgenden Auftrag); andernfalls richtet sich die
                 Speicherdauer nach den gesetzlichen Aufbewahrungsfristen.
+              </p>
+            </Block>
+
+            <Block title="E-Mail-Postfach (Google)">
+              <p>
+                Eingehende Nachrichten – sowohl über das Kontaktformular als
+                auch direkt per E-Mail – werden in einem E-Mail-Postfach von
+                Google Ireland Limited, Gordon House, Barrow Street, Dublin
+                4, Irland empfangen und dort gespeichert. Rechtsgrundlage ist
+                Art. 6 Abs. 1 lit. b DSGVO, soweit die Nachricht der
+                Anbahnung eines Vertrags dient, andernfalls Art. 6 Abs. 1
+                lit. f DSGVO (berechtigtes Interesse an funktionierender
+                Kommunikation).
+              </p>
+              <p>
+                Da Google auch Server außerhalb der EU/des EWR betreibt, kann
+                eine Datenübermittlung in Drittländer, insbesondere die USA,
+                erfolgen; diese ist über EU-Standardvertragsklauseln
+                abgesichert.
               </p>
             </Block>
 
